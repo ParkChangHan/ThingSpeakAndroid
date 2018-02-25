@@ -1,17 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:clipToPadding="false"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="com.iot.agriculture.iot.Main">
 
-    <lecho.lib.hellocharts.view.LineChartView
-        android:id="@+id/chart"
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        >
+
+        <Button
+            android:id="@+id/sector_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="66dp"
+            android:text="SECTOR_1" />
+
+        <Button
+            android:id="@+id/sector_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sector_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="66dp"
+            android:text="SECTOR_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="180dp"
+        android:background="#ffffff"
+        >
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="360dp"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        >
+    </RelativeLayout>
 
 </RelativeLayout>
